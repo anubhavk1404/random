@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox
+
+    </title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .flexbox
+        {
+            height: 400px;
+            width: 100%;
+            border: 3px  solid white ;
+            display: flex;
+            /* flex-direction: column;
+            flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: nowrap; */
+            /* flex: flex-direction */
+            /* flex-flow: column-reverse wrap; */
+            flex-direction: row nowrap;
+            justify-content: start;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            align-items:center;
+            align-items: flex-end;
+        }
+        .box
+        {
+            border: 3px solid white ;
+            margin: 5px;
+            color:white;
+
+             width: 100px;
+            height: 100px; 
+            /* transition-timing-function: ease-in;
+        transition-timing-function: ease-out;
+        transition-delay: 3s;
+        transition: background-color is ease-in 5s;
+        transition: all is ease ease-in 2s; */
+
+        }
+        #box2{
+            order: 4;
+            flex-grow: 3;
+            flex-basis: 350px;
+            /* flex: flex-grow flex-shrink flex-basis; */
+            flex: 4 4 600px;
+        }
+        #box5
+        {
+            order: 1;
+        }
+        /* #box5:hover
+        {
+            color: aquamarine;
+            transition: ease-in 3s;
+            background-color: black;
+        height:400px;
+        width: 400px;
+        font-size: 50px;
+        color: white;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="box" id="box1">Box-1</div>
+        <div class="box" id="box2">Box-2</div>
+        <div class="box" id="box3">Box-3</div>
+        <div class="box" id="box4">Box-4</div>
+        <div class="box" id="box5">Box-5</div>
+        <div class="box" id="box6">Box-6</div>
+    </div>
+
+    
+</body>
+</html>
