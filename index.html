@@ -8,181 +8,468 @@
     <title>Document</title>
 </head>
 
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-   
-    <style text="text/css">
+
+<style text="text/css">
+    
+
         span {
             margin-right: 8px;
-        }
+    }
 
-        header {
-            font-size: 15px;
-            font-family: Arial;
-
-          
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        .brand-title {
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .count {
-            background-color: rgb(239, 171, 12);
-            color: white;
-            width: 25px;
-            height: 25px;
-
-            /* Adjusting the dimension for span element*/
-            display: inline-block;
-            text-align: center;
-            border-radius: 25px;
-            font-size: 20px;
-        }
-
-        #data {
-            margin-right: 15px;
-        }
-
-        #icon {
-            margin-right: 5px;
-        }
-
-        article {
-            display: block;
-        }
-
-        .flash-sale {
-            margin-top: 30px;
-            border: 1px solid black;
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
-        .bi-lightning-fill {
-            color: goldenrod;
-        }
-
-        footer {
-            background-color: black;
-            color: white;
-            font-family: Arial;
-            padding: 10px;
-            display: grid;
-            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
-        }
-
-        .footer-brand-name {
-            font-weight: bold;
-            font-size: 13px;
-            padding: 10px;
-        }
-
-        .data~span {
-            display: block;
-            font-size: 10px;
-            color: gray;
-            padding: 4px;
-        }
-
-        aside span {
-            margin-right: 8px;
-        }
-
-        .data div {
-            padding-bottom: 10px;
-        }
-
-        section {
-            height: 400px;
-        }
-    </style>
-
-    </head>
+    header {
+        margin-top: 20px;
+        font-size: 15px;
+        font-family: Arial;
 
 
-    <body>
-        <header>
-            <div class="brand-title">
-                <span>Eduport</span>
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .brand-title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .count {
+        background-color: rgb(239, 171, 12);
+        color: white;
+        width: 25px;
+        height: 25px;
+        
+        /* Adjusting the dimension for span element*/
+        display: inline-block;
+        text-align: center;
+        border-radius: 25px;
+        font-size: 20px;
+    }
+
+    #data {
+        margin-right: 15px;
+    }
+    
+    #icon {
+        margin-right: 5px;
+    }
+    
+    article {
+        display: block;
+    }
+    
+    .flash-sale {
+        margin-top: 30px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .bi-lightning-fill {
+        color: goldenrod;
+    }
+    
+    
+    
+    .data~span {
+        display: block;
+        font-size: 10px;
+        color: gray;
+        padding: 4px;
+    }
+
+    aside span {
+        margin-right: 8px;
+    }
+
+    .data div {
+        padding-bottom: 10px;
+    }
+    
+   .stats-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+}
+
+.stat-box {
+  flex: 1 1 200px;
+  max-width: 220px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.stat-box .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.stat-box h3 {
+    font-size: 24px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.stat-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 180px;
+  margin: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo .highlight {
+  color: #f36f21;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.contact p {
+  margin: 6px 0;
+}
+
+.app-buttons img {
+  width: 120px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fc;
+  color: #333;
+}
+
+.courses-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.courses-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.courses-section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  background-color: #e3eaf3;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.tab.active, .tab:hover {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.course-tag {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 8px;
+  font-size: 12px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  color: #333;
+}
+
+.course-tag.beginner {
+  background: #d9f9e5;
+  color: #1e824c;
+}
+
+.course-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.course-card p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  color: #444;
+}
+
+.course-meta i {
+  color: #f39c12;
+  margin-right: 4px;
+}
+
+
+
+
+</style>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="brand-title">
+            <span>Eduport</span>
             </div>
             <div id="data">
-                <span>Demos <span class="bi bi-chevron-down"></span></span>
-                <span>Pages <span class="bi bi-chevron-down"></span></span>
-                <span>Accounts <span class="bi bi-chevron-down"></span></span>
-                <span>Megamenu <span class="bi bi-chevron-down"></span></span>
-                <span>...</span>
-                <input type="text" placeholder="Search"><span class="bi bi-search"></span>
-                <img src="data:image/png;base64,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" alt="" height="35px" width="35px">
-            </div>
-
-            
-
-        </header>
-
-        <div class="flash-sale">
-            <marquee> <!-- This element is make text move from right to left-->
-                <article>
-                    <span class="bi bi-lightning-fill"></span>
-                    <span>Happy Holiday Deals on Everything</span>
-                    <span class="bi bi-lightning-fill"></span>
-                </article>
-            </marquee>
+            <span>Demos <span class="bi bi-chevron-down"></span></span>
+            <span>Pages <span class="bi bi-chevron-down"></span></span>
+            <span>Accounts <span class="bi bi-chevron-down"></span></span>
+            <span>Megamenu <span class="bi bi-chevron-down"></span></span>
+            <span>...</span>
+            <input type="text" placeholder="Search"><span class="bi bi-search"></span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ0AAACUCAMAAAC+99ssAAABOFBMVEUTjOz///9WWF//xnOGio/9SB7/q1UAhuvTpmIAiOsQje9XV10lg9ZUW2gAg+v/yXT3+/5RXW7/uGP/RhhYVVb/yG0AjPNQUlkah+BPVF6iqrSFufP/rE13e4B9jpXr9P262Pji7/zotWpiZWvT5vvH3vlJoO+YxfRhpvCpzvYzlu1srPBFm+70vm/1xHlrbnRAbp9bUkyNioVGaZHzSiJFSVL9MgBKZYdPYHcvfMNBTF1iYGBbkNOyrqnHoojTpXygm6vkp2vwqWCRmrT/rT9gk8y9oJXktHwAh/iNpcKDoMbrwYHLt5u6saFeibY5jdtxkKzJo2y8UEB8VVU3WGTZTDE3drOPVE/iSiqoUUbi5Oa4usHHzdN0amGghmaJd2OylGl0hZfIZFWydW+WgYLgW0W2ZVynfHp1bEgnAAAKs0lEQVR4nO2ca0PaSBSGY4yGJJjgikBAEAIKBkWpYr20ujd3a7ettbu6rtfu9vb//8FOAiSTyUw4M+B2P/R8UkKGh/fMmTmZOYM09X826WsDJNo3OnGbJF2mbxNscQJ0y42VarPUXnUlVTVVVXJX26VmdaWx/NXplqul1rqrmaaqIZM88/5QTVNz11ulau1r0WVqK23Jx5Lo5kNK7ZUxCEXplqttF5ExwDBE1XTba6JOFqLLINWYktFERAoKBYsA3XJz1VTBaH1TzdWmgIDcdMslF+BQioCqW+Lm46SrlVRe2TAB1VLjEekyTVeczeeTmlz9j4MuU9XGY/P5tCoHH5yu0RLqb6RpagvuXihdpilNgs3ng7sXSFdrmRNi88xs1SZJV52YcH3TpOrE6DLNSQrXNxPkXQBdpjV+qMZNawHwRtM1xhzjWKa6o2N3JN3KhLtcaJq0Mi5dlSMX4cbTRsXGCLq1R1Ouj7c2Dl11ItNDAp6arF4iXfVx2Xy+RLwkusYj9rmATkuK3AS6xqP2uQBPSsBj0y2v/xdwCG+dnTKz6Vb5BmEdN6471VV+uhIHHOIpRI2LUC3x0sHDFYGkt57uzeO293QrzQHIDFwGXQ2alSC0y243a5CW7RqXaTCfWeOhy7SB0un65VxWppqRlS+heFqbnrDQ6ZrATqen97IGHc7n20sD8dQmnA7qVz09zxBuYNl5KB7dt1S6FsyvCI4t3EA+KJ7WgtKtAeEkOVk5Xz1ZAuLR0hUKXcYF0m2NhkN4W0A6lxIYFLoSrNfp+xA4hLcPwzMpY3KcrgZqC9HtAen2oKNeDUBXgoZEFwQny11oYMTFi9GBpQP1Ol88YM+jiBejg87+BfZoYiPD/jXmC7Am49kASZcBzxJMrQ7u7u8PD3A+8IxBZnokHXgO22dJd/CwYVmd93bIZwCjNj6fEXTghFi/pNPZh+fWNDLLOn9AAvqExiU0GSDTZIIOnNbpbwybwnbw4PhwHt+0c448jCwPpYslegQdNHOSckXnQSb4bPkuZQ3hfP0sa8NxnMViDkrXTqLLgJfCcsVFK3VvHAyj07YPDu/PcbYAcRpOJ5mZBLo1Hjrku875/Z0/gBh3D+cdCptvPHRrCXTA1GlA13feBnLehvcHHY2PjkikInQ1F9rKkG7YvZhknHSSW2PSrUEHO03D6EYaotM06JC3xqQDzmIvCs+ePXvOQfccvb/wAkZXYtHB0k69cDSL7Dsw3PT0d94NRwWIfNEkFKdrQCJWLxwvCdEtHYPwzAaDDjSe6N/7cPx0s0vfg+jWGHRtULf7QZjuB0jzaptBB8oAzmZnBelmZ88A7WvrdLplyFd7dDpJWqbSNf4ndA0qHewh2/1RmO5H0FSEP3ZjdE3YJHssHBXHoPa1JpUONlNoPwnT/QT6+vhsEdIB1+x06UhwND6Crajga3kYHTB90grHPy8tLXHRoff/fFwAtt+i0cEfeHInvxwf/cpB9+vR8S8nOYFHH4wOuPTkNZAzX5wm53S4WacvzBy8cZdGV+PaPMm95KB7Cc8+Pbza+HQnHTBd54SraTod196O7v4GFc/6zeXa/FHHp5Nyr6DJ8eIrLsdOhM48BdOd8rU8CTpJAtNxtkun49zwzL2G4S2+5nPsJGIWNQKMWs6IZdBxjMZ9y4EeGhef80pHHY2597J1UM9bBO6mhHTUmQyaBYRmAuYL6yVvhRc9CwDveoamj/Tt4nNO5VgZFNde+4DOHBG3i69Nbjp69gnN3HHTpMQZY/GVQNEII3MHbi1GTEfOZXU+C7mVWznmUw/siZE087RDl2+xcypW8kh/YoQ9bcdMPaNL1zkTrCqkP23DVirilks5GzG2DSfFOQoPjLVSAVzlodClUo4zHSzPoj8cB70mRsdc5YGvuEdMT/XNcZwNb4nbGfwvEBHIzCqDDrS6GLdcim5i2kWKK/hXZuN0HYfC5nSE6NgrswKzRZ/OQkGAE/obGGJ07FVt8I4ASdePUr/P+X2vP6LAFtlJOvaOAMduSmC6rnVos4XV0URmioTdFI6dqCFbzn3z98MGZfNu4+HvNy50dSKwpJ0ozjEFaXP2VlGU3mEMz9o47KErb88kPgETd/HgO6DedhSS7QlCUPL2nRPFs5w7O+9deoIEhG5C+XRJO6Dg3WOkyL4nm2952T6M4FnOoS3nh5ffPgMLmLx7DNx516X0lvJECelk20iFeFbK25UP6NA7t9IwwBE774BHHz2n7+/J2bKC0+F4fTiMTiln5b19AN+oqoWRFR+ebN2uIcub4Wfn+5UeAzwrdeD/nw/5N2XZ6HY9AZMbH1XxMaJaRtfT20a/wqhO0smGX+thnQ9KQTC6uv9C1tjeT9ZPJYvceCqNdK/MM6h+KpN09gHCs86HVTIhXXl4Sza7l6Tf6EqjhCotvbCVxSqzAtdu5oOSj/fW+6AKJKTbDG/KZrcT9kFrI+lYFW66vk+UoMbpZPs+LFHJB/iRu7LzrDpfSIUbQzxd2u4StUXlOF12J/wCAV05epvRZckXkw5aWalL8UrF4NNDuncL70K6ctyxg+/wlNb5YJWVtCRUlyiFxUHUDsWxf5+Zmfl96Nug29Vjd2bn43jQqlTaY/c2rVCRDMo/LhZmFi7+6P+jkOwRvO14rwNW9MYTKf2SWkUZDsi+PvafC0i7hT9tXFeKY308sqwMXg0drySnF7NjCEo9LxtXM55dGVi4Uh2LzDDIXlcD0xHzmX5JL4/Fplokkf3Xgk+38JeNw1E9K8vdqHg8VfjEWp7+lF6nqESs3IdDeOXoBeq9xlOcju8EQ8S3OqM8th6FqMwMtNupRC/QXTuPD3p8pz8iiZ6enqO1nyckqvwzoPuHoMPGQ8zmsEJa3pMzeDbAoCOkU5QPA7oP5AWqazE6/lNH2IktOl0kLn37uOPDXX0kL2zSxAvpRE5shWkyQ7syCaF88se7T7HXqVEb0ImddgtOCtLpYo5VKp93PPtQiV2hxcWQTvCkYHDKkk4Xcyyi87X7EqejTRcDOuFTlsPAhWvn033m0k78hOrgdC8jKmL9rj+kxAYUxpDi0411urd/Mhoas5VPDDpmzGrSWCej/VPl0PFuGLMxOupkgejGPlXun8in08ksutjr1Lvn0po79ol879cMGHSxjnfh013Euh2DbhK/ZoASlhObmgWQHe/jlU93Fet2tJsN+2QivwSBrNij4ZEdjzWTUbtdrwj5YNgvkNzKtLAjXPuln97tEHQ0x+brN6DPhdFNXZd78Y+g0818IejiX6xXvoZ9LJBuKlOMy0d0vEEGRdLFul1eLk74l2+mqPJR6cj8Tlg4LrqpzE0vKl8+ivF5QPc5+jJxT+/mUX5xyeMr1nH9oh0vyNyjdJFu16uDncpPh9xbxPWLjCmVd9TnCmw8yfeKcKeK0KGUGekXAEboLgZ00Yk2RKsXH/tX0jy7Lm4O+XDXVq4GdBc4XXnItsmrmyAd6n+3ylw+T4wplZ0B3RVO540n6K0KTyyMSYfs+kaZ6+XxjlcZLgVEnrbr+d6cciMg21h0SMDrWwV3bWV3iIfRlW3l9lr8F0DF6Xy7vi0WEYMH+WRIt+tjoZeKxVtR0SZDN+VpeH2LGIsfdxd2PVvYRVjF29vrMTSbHN1j2jc6cftGJ27/AqwoUashIVUxAAAAAElFTkSuQmCC"
+                alt="" height="35px" width="35px">
         </div>
-        <section>
-
-        </section>
-
-        <!-- FOOTER -->
-        <footer>
-            <div>
-
-                <div class="footer-brand-name">
-                    Shopper
-                </div>
-                <aside>
-                    <span class="bi bi-facebook"></span>
-                    <span class="bi bi-youtube"></span>
-                    <span class="bi bi-instagram"></span>
-                    <span class="bi bi-twitter-x"></span>
-                </aside>
-            </div>
-            <div>
-                <div class="data">SUPPORT</div>
-                <span> Contact Us</span>
-                <span>FAQ's</span>
-                <span>Size Guide</span>
-                <span>Shipping & Returns</span>
-            </div>
-            <div>
-                <div class="data">Shop</div>
-                <span>Men's Shopping</span>
-                <span>Women's Shopping</span>
-                <span>Kid's Shopping</span>
-                <span>Discounts</span>
-            </div>
-            <div>
-                <div class="data">Company</div>
-                <span>Our Story</span>
-                <span>Careers</span>
-                <span>Terms & Condition</span>
-                <span>Privacy & Cookies Policy</span>
-            </div>
-            <div>
-                <div class="data">Contact</div>
-                <span>1-202-555-0105</span>
-                <span>1-202-555-0106</span>
-                <span>help@shopper.com</span>
-            </div>
-        </footer>
 
 
-    </body>
+
+    </header>
+   <section class="stats-section">
+  <div class="stat-box" style="background-color: #fff6dd;">
+    <div class="icon" style="color: #f5b600;"><span class="bi bi-window-desktop"></div>
+    <h3>10K+</h3>
+    <p>Online Courses</p>
+  </div>
+
+  <div class="stat-box" style="background-color: #e8ecef;">
+    <div class="icon" style="color: #113c53;"><span class="bi bi-person"></span></div>
+    <h3>200+</h3>
+    <p>Expert Tutors</p>
+  </div>
+
+  <div class="stat-box" style="background-color: #efeafd;">
+    <div class="icon" style="color: #7c3aed;"><span class="bi bi-person"></span></div>
+    <h3>60K+</h3>
+    <p>Online Students</p>
+  </div>
+
+  <div class="stat-box" style="background-color: #e3f7f9;">
+    <div class="icon" style="color: #00a5b9;"><span class="bi bi-patch-check-fill"></span></div>
+    <h3>6K+</h3>
+    <p>Certified Courses</p>
+  </div>
+</section>
+
+
+<section class="courses-section">
+  <h2>Most Popular Courses</h2>
+  <p>Choose from hundreds of courses from specialist organizations</p>
+
+  <div class="tabs">
+    <button class="tab active">Web Design</button>
+    <button class="tab">Development</button>
+    <button class="tab">Graphic Design</button>
+    <button class="tab">Marketing</button>
+    <button class="tab">Finance</button>
+  </div>
+
+  <div class="course-grid">
+    <!-- Course Card -->
+    <div class="course-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Sketch_Logo.svg" alt="Sketch Logo">
+      <div class="course-tag">All level</div>
+      <h3>Sketch from A to Z: for app designer</h3>
+      <p>Proposal indulged no do sociable the throwing settling.</p>
+      <div class="course-meta">
+         <span class="bi bi-star-fill">
+            <span class="bi bi-star-fill"
+            ></span><span class="bi bi-star-fill"
+            ></span><span class="bi bi-star-fill"
+            ></span><span class="bi bi-star"
+            ></span> 4.5/5.0</span>
+        <span class="bi bi-clock"> 9h 55m</span>
+        <span class="bi bi-collection-play-fill"> 65 lectures</span>
+      </div>
+    </div>
+
+    <!-- Repeat the course-card div for more courses, changing content as needed -->
+    <!-- Here's another example -->
+    <div class="course-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop Logo">
+      <div class="course-tag beginner">Beginner</div>
+      <h3>Graphic Design Masterclass</h3>
+      <p>Rooms oh fully taken by worse do. Points afraid but may end...</p>
+      <div class="course-meta">
+        <span class="bi bi-star-fill">
+            <span class="bi bi-star-fill"
+            ></span><span class="bi bi-star-fill"
+            ></span><span class="bi bi-star-fill"
+            ></span><span class="bi bi-star"
+            ></span> 4.5/5.0</span>
+        <span class="bi bi-clock"> 9h 55m</span>
+        <span class="bi bi-collection-play-fill"> 65 lectures</span>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h2 class="logo"><span class="highlight">Edu</span>port</h2>
+      <p>Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
+      <div class="social-icons">
+        <a href="#"><spa class="bi bi-facebook"></span></a>
+        <a href="#"><span class="bi bi-twitter"></span></a>
+        <a href="#"><span class="bi bi-linkedin"></span></a>
+        
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">News and Blogs</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Career</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Community</h3>
+      <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Faq</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Teaching</h3>
+      <ul>
+        <li><a href="#">Become a teacher</a></li>
+        <li><a href="#">How to guide</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column contact">
+      <h3>Contact</h3>
+      <p><strong>Toll free:</strong> +1234 568 963</p>
+      <p><small>(9:AM to 8:PM IST)</small></p>
+      <p><strong>Email:</strong> example@gmail.com</p>
+      <div class="app-buttons">
+        <span class="bi bi-apple"></span>
+        <span class="bi bi-google-play"></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
 
 </html>
